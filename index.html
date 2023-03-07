@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi primer página web con Vue</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div id="app">
+		<h1>{{ titulo }}</h1>
+        <h2> jajaja ya le entendi al vue ta bien facil</h2>
+		<img :src="imagen" alt="Imagen de ejemplo">
+        <h3>No es cierto ayudaaa </h3>
+
+	</div>
+
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				titulo: 'Mi página web con Vue',
+				imagen: 'https://media.giphy.com/media/1v7xCHMGeMIb6/giphy.gif'
+			}
+		})
+	</script>
+</body>
+</html>
